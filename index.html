@@ -1,28 +1,35 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nafidik - Global Shopping</title>
+<meta name="description" content="NAFIDIK - Discover smart technology and home organization products for everyday life.">
+<title>NAFIDIK | Smart Shopping</title>
 <style>
-*{box-sizing:border-box}
-body{margin:0;font-family:Arial,sans-serif;background:#f5f7fa;color:#222}
-header{background:#102b46;color:white;padding:22px 5%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}
-.logo{font-size:28px;font-weight:bold;color:#42d6b0}
-nav a{color:white;text-decoration:none;margin:8px}
-.hero{text-align:center;padding:65px 15px;background:linear-gradient(120deg,#102b46,#176b75);color:white}
-.hero h1{font-size:38px;margin:10px}
-.hero p{font-size:17px}
-.search{text-align:center;padding:25px}
-.search input{padding:13px;width:90%;max-width:400px;border:1px solid #ddd;border-radius:8px}
-.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;padding:20px 5%}
-.card{background:white;border-radius:12px;padding:20px;text-align:center;box-shadow:0 3px 12px #0001}
-.photo{font-size:65px;background:#edf4f6;padding:25px;border-radius:10px}
-.card h3{margin-bottom:8px}
-.price{color:#087c68;font-size:22px;font-weight:bold}
-.card a{display:block;background:#087c68;color:white;padding:12px;border-radius:7px;text-decoration:none;margin-top:15px}
-.card a:hover{background:#075647}
-footer{text-align:center;background:#102b46;color:white;padding:25px;margin-top:30px}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,sans-serif;background:#f7f8fc;color:#172033}
+header{background:#101b35;color:white;padding:22px 6%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:15px}
+.logo{font-size:27px;font-weight:bold;letter-spacing:2px;color:#55d6be}
+nav a{color:white;text-decoration:none;margin:0 10px;font-size:14px}
+.hero{text-align:center;padding:75px 20px;background:linear-gradient(135deg,#14213d,#176b75);color:white}
+.hero h1{font-size:42px;margin-bottom:18px}
+.hero p{font-size:17px;line-height:1.7;max-width:650px;margin:auto}
+.hero a{display:inline-block;margin-top:25px;background:#55d6be;color:#10243a;padding:14px 27px;border-radius:7px;text-decoration:none;font-weight:bold}
+section{padding:55px 6%}
+.section-title{text-align:center;font-size:29px;margin-bottom:12px}
+.subtitle{text-align:center;color:#687386;margin-bottom:32px}
+.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px}
+.product{background:white;border-radius:12px;padding:24px;text-align:center;box-shadow:0 4px 18px #15233b12}
+.product .emoji{font-size:55px;margin:15px}
+.product h3{margin:12px 0}
+.product p{color:#687386;line-height:1.5;min-height:48px}
+.product a{display:block;margin-top:18px;background:#14213d;color:white;text-decoration:none;padding:12px;border-radius:7px}
+.product a:hover{background:#176b75}
+.about{text-align:center;background:#eaf3f4;line-height:1.8}
+footer{background:#101b35;color:white;text-align:center;padding:30px 15px;line-height:2}
+footer a{color:#55d6be}
+@media(max-width:600px){.hero h1{font-size:32px}nav a{margin:0 5px}}
 </style>
 </head>
 <body>
@@ -30,94 +37,101 @@ footer{text-align:center;background:#102b46;color:white;padding:25px;margin-top:
 <header>
 <div class="logo">NAFIDIK</div>
 <nav>
-<a href="#">Home</a>
-<a href="#products">Products</a>
+<a href="#home">Home</a>
+<a href="#technology">Technology</a>
+<a href="#home-products">Home & Office</a>
 <a href="#about">About</a>
 </nav>
 </header>
 
-<section class="hero">
-<h1>Welcome to Nafidik</h1>
-<p>Discover products. Enjoy shopping. Explore the world.</p>
-<p>Your Global Shopping Destination</p>
+<div class="hero" id="home">
+<h1>Discover Smart Living</h1>
+<p>Explore useful technology, smart accessories and creative home organization products. Find products that make everyday life easier.</p>
+<a href="#technology">Explore Products</a>
+</div>
+
+<section id="technology">
+<h2 class="section-title">Technology & Accessories</h2>
+<p class="subtitle">Smart products for your everyday needs.</p>
+<div class="products">
+
+<div class="product">
+<div class="emoji">🎧</div>
+<h3>Wireless Earbuds</h3>
+<p>Enjoy music and calls wherever you go.</p>
+<a href="https://www.amazon.com/s?k=wireless+earbuds" target="_blank" rel="noopener">View Products</a>
+</div>
+
+<div class="product">
+<div class="emoji">🔋</div>
+<h3>Power Banks</h3>
+<p>Keep your devices charged on the move.</p>
+<a href="https://www.amazon.com/s?k=portable+power+bank" target="_blank" rel="noopener">View Products</a>
+</div>
+
+<div class="product">
+<div class="emoji">📱</div>
+<h3>Phone Accessories</h3>
+<p>Useful accessories for your smartphone.</p>
+<a href="https://www.amazon.com/s?k=smartphone+accessories" target="_blank" rel="noopener">View Products</a>
+</div>
+
+<div class="product">
+<div class="emoji">⌚</div>
+<h3>Smart Watches</h3>
+<p>Discover smart watches for daily life.</p>
+<a href="https://www.amazon.com/s?k=smart+watches" target="_blank" rel="noopener">View Products</a>
+</div>
+
+</div>
 </section>
 
-<div class="search">
-<input type="text" id="search" placeholder="Search for products..." oninput="searchProducts()">
+<section id="home-products">
+<h2 class="section-title">Home & Office Organization</h2>
+<p class="subtitle">Simple ideas for a cleaner and smarter space.</p>
+<div class="products">
+
+<div class="product">
+<div class="emoji">🗂️</div>
+<h3>Desk Organizers</h3>
+<p>Keep your workspace neat and organized.</p>
+<a href="https://www.amazon.com/s?k=desk+organizer" target="_blank" rel="noopener">View Products</a>
 </div>
 
-<h2 style="text-align:center">Featured Products</h2>
-
-<section class="products" id="products">
-
-<div class="card">
-<div class="photo">🎧</div>
-<h3>Wireless Headphones</h3>
-<p>Enjoy music anywhere.</p>
-<div class="price">$25.00</div>
-<a href="https://example.com">View Deal</a>
+<div class="product">
+<div class="emoji">🏠</div>
+<h3>Home Storage</h3>
+<p>Discover practical storage solutions.</p>
+<a href="https://www.amazon.com/s?k=home+storage+organizers" target="_blank" rel="noopener">View Products</a>
 </div>
 
-<div class="card">
-<div class="photo">⌚</div>
-<h3>Smart Watch</h3>
-<p>Smart technology for everyday life.</p>
-<div class="price">$35.00</div>
-<a href="https://example.com">View Deal</a>
+<div class="product">
+<div class="emoji">🍽️</div>
+<h3>Kitchen Organizers</h3>
+<p>Make your kitchen more practical.</p>
+<a href="https://www.amazon.com/s?k=kitchen+organizers" target="_blank" rel="noopener">View Products</a>
 </div>
 
-<div class="card">
-<div class="photo">🎒</div>
-<h3>Travel Backpack</h3>
-<p>Perfect for everyday adventures.</p>
-<div class="price">$20.00</div>
-<a href="https://example.com">View Deal</a>
+<div class="product">
+<div class="emoji">📦</div>
+<h3>Storage Boxes</h3>
+<p>Organize your belongings with ease.</p>
+<a href="https://www.amazon.com/s?k=storage+boxes" target="_blank" rel="noopener">View Products</a>
 </div>
 
-<div class="card">
-<div class="photo">👟</div>
-<h3>Sport Shoes</h3>
-<p>Comfort and style for every day.</p>
-<div class="price">$40.00</div>
-<a href="https://example.com">View Deal</a>
 </div>
-
-<div class="card">
-<div class="photo">📷</div>
-<h3>Digital Camera</h3>
-<p>Capture your favorite moments.</p>
-<div class="price">$55.00</div>
-<a href="https://example.com">View Deal</a>
-</div>
-
-<div class="card">
-<div class="photo">🎒</div>
-<h3>Daily Accessories</h3>
-<p>Useful products for your lifestyle.</p>
-<div class="price">$15.00</div>
-<a href="https://example.com">View Deal</a>
-</div>
-
 </section>
 
-<section id="about" style="text-align:center;padding:30px">
-<h2>About Nafidik</h2>
-<p>We help you discover interesting products from around the world.</p>
+<section class="about" id="about">
+<h2>About NAFIDIK</h2>
+<p>NAFIDIK helps you discover useful products in technology, home organization and everyday living. Our goal is to make smart shopping easier.</p>
 </section>
 
 <footer>
-<p>© 2026 Nafidik. All Rights Reserved.</p>
-<p>Shopping Without Borders.</p>
+<h2>NAFIDIK</h2>
+<p>Discover. Compare. Shop Smart.</p>
+<p>© 2026 NAFIDIK. All rights reserved.</p>
 </footer>
-
-<script>
-function searchProducts(){
-let value=document.getElementById("search").value.toLowerCase();
-document.querySelectorAll(".card").forEach(card=>{
-card.style.display=card.innerText.toLowerCase().includes(value)?"block":"none";
-});
-}
-</script>
 
 </body>
 </html>
